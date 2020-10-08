@@ -7,3 +7,4 @@
 |[nto1.cpp](nto1.cpp)|Print from n to 1|
 |[sort.cpp](sort.cpp)|Sort an array|
 |[middle.cpp](middle.cpp)|Middle element of stack|
+|[reverse.cpp](reverse.cpp)|Reverse stack|
