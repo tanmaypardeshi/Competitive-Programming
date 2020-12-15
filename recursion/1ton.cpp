@@ -1,26 +1,26 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-void print(int);
+void print1ton(int);
 
 int main()
 {
     int n;
+    cout << "Enter n:- ";
+    cin >> n;
 
-    cout<<"Enter n:- ";
-    cin>>n;
-
-    print(n);
-
+    print1ton(n);
 }
 
-void print(int n)
+void print1ton(int n)
 {
-    if(n == 1)
+    if (n == 1)
     {
-        cout<<n<<endl;
+        cout << n << endl;
         return;
     }
-    print(n-1);
-    cout<<n<<endl;
+
+    print1ton(n - 1);
+
+    cout << n << endl;
 }

@@ -1,27 +1,26 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-void print(int);
+void printnto1(int);
 
 int main()
 {
     int n;
 
-    cout<<"Enter n:- ";
-    cin>>n;
+    cout << "Enter n:- ";
+    cin >> n;
 
-    print(n);
-
+    printnto1(n);
 }
 
-void print(int n)
+void printnto1(int n)
 {
-    if(n == 1)
+    if (n == 1)
     {
-        cout<<n<<endl;
+        cout << n << endl;
         return;
     }
-    cout<<n<<endl;
-    print(n-1);
+    cout << n << endl;
 
+    printnto1(n - 1);
 }
