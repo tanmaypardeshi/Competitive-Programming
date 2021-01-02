@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 void printnto1(int);
@@ -11,6 +11,8 @@ int main()
     cin >> n;
 
     printnto1(n);
+
+    return 0;
 }
 
 void printnto1(int n)
@@ -20,6 +22,7 @@ void printnto1(int n)
         cout << n << endl;
         return;
     }
+
     cout << n << endl;
 
     printnto1(n - 1);

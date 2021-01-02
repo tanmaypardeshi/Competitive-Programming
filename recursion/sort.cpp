@@ -1,39 +1,41 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-
 
 void sort(vector<int> &);
 void insert(vector<int> &, int);
 
 int main()
 {
+    int n, temp;
     vector<int> v;
 
-    int n, num;
+    cout << "Enter n:- ";
+    cin >> n;
 
-    cout<<"Enter size of array:- ";
+    cout << "Enter elements in the array:- ";
 
-    cin>>n;
-
-    for(int i=0;i<n;i++)
+    for (int i = 0; i < n; i++)
     {
-        cin>>num;
-        v.push_back(num);
+        cin >> temp;
+        v.push_back(temp);
     }
 
     sort(v);
 
-    for(auto x:v)
-        cout<<x<<"\t";
-    cout<<endl;
+    for (auto x : v)
+    {
+        cout << x << endl;
+    }
 
     return 0;
 }
 
-void sort(vector<int> & v)
+void sort(vector<int> &v)
 {
-    if(v.size() == 1)
+    if (v.size() == 1)
+    {
         return;
+    }
 
     int temp = v[v.size() - 1];
     v.pop_back();
@@ -43,20 +45,20 @@ void sort(vector<int> & v)
     insert(v, temp);
 }
 
-void insert(vector<int> & v, int temp)
+void insert(vector<int> &v, int val)
 {
-    if(v.size() == 0 || v[v.size() -1 ] <= temp)
+    if (v.size() == 0 || v[v.size() - 1] <= val)
     {
-        v.push_back(temp);
+        v.push_back(val);
         return;
     }
 
-    int val = v[v.size() -1];
+    int temp = v[v.size() - 1];
     v.pop_back();
 
-    insert(v, temp);
+    insert(v, val);
 
-    v.push_back(val);
+    v.push_back(temp);
 
     return;
 }

@@ -6,10 +6,13 @@ void print1ton(int);
 int main()
 {
     int n;
+
     cout << "Enter n:- ";
     cin >> n;
 
     print1ton(n);
+
+    return 0;
 }
 
 void print1ton(int n)
