@@ -1,4 +1,2 @@
-*.out
-recursion/*.out
-db/*.out
 .vscode
+*.out

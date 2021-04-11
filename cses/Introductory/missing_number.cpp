@@ -9,15 +9,15 @@ int main()
     long int a = 0;
     cin >> n;
 
-    for (long int i = 0; i < n; i++)
-    {
-        sum1 += i;
-    }
-
     for (long int i = 0; i < n - 1; i++)
     {
-        cin >> a;
-        sum2 += a;
+        long int temp;
+        cin >> temp;
+        sum2 += temp;
+    }
+    for (long int i = 1; i <= n; i++)
+    {
+        sum1 += i;
     }
 
     cout << sum1 - sum2 << endl;

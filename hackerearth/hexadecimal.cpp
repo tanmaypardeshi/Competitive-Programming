@@ -10,6 +10,7 @@ int hex(int number)
         sum += number % 16;
         number /= 16;
     }
+    return sum;
 }
 
 int gcd(int a, int b)
