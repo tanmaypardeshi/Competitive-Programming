@@ -10,3 +10,7 @@
 |               [minumumsubsetsum.cpp](minumumsubsetsum.cpp)               | Find the subsets whose difference is minimum                 |
 |        [countsubsetwithgivensum.cpp](countsubsetwithgivensum.cpp)        | Count the number of subsets with given sum                   |
 | [countsubsetwithgivendifference.cpp](countsubsetwithgivendifference.cpp) | Count the number of subsets with given difference/target sum |
+|                      [unbounded.cpp](unbounded.cpp)                      | Unbounded knapsack                                           |
+|                     [rodcutting.cpp](rodcutting.cpp)                     | Rod cutting problem                                          |
+|                    [coinchange1.cpp](coinchange1.cpp)                    | Coin Change Problem - Maximum number of ways                 |
+|                    [coinchange2.cpp](coinchange2.cpp)                    | Coin Change Problem - Minimum number of coins                |
