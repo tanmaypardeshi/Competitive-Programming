@@ -7,3 +7,5 @@
 |           [palindrome_partitioning.cpp](palindrome_partitioning.cpp)           | Recursive Palindrome Partitioning |
 |  [palindrome_partitioning_memoized.cpp](palindrome_partitioning_memoized.cpp)  | Memoized Palindrome Partitioning  |
 | [optimised_palindrome_partitioning.cpp](optimised_palindrome_partitioning.cpp) | Optimised Palindrome Partitioning |
+|          [boolean_parenthisization.cpp](boolean_parenthisization.cpp)          | Boolean Parenthisization          |
+| [boolean_parenthisization_memoized.cpp](boolean_parenthisization_memoized.cpp) | Boolean Parenthisization Memoized |
