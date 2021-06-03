@@ -9,27 +9,28 @@ using namespace std;
 
 vector<vector<int>> merge(vector<vector<int>> &intervals)
 {
+    sort(intervals.begin(), intervals.end());
+
     vector<vector<int>> ans;
-    bool flag = false;
-    for (int i = 0; i < intervals.size() - 1; i++)
+    ans.push_back(intervals[0]);
+    int j = 0;
+    int i = 1;
+    while (i < intervals.size())
     {
-        vector<int> temp;
-        if (intervals[i][1] >= intervals[i + 1][0])
+        if (ans[j][1] >= intervals[i][0])
         {
-            temp.push_back(intervals[i][0]);
-            temp.push_back(intervals[i + 1][1]);
-            ans.push_back(temp);
-            i++;
+            ans[j][1] = max(ans[j][1], intervals[i][1]);
         }
         else
         {
-            temp.push_back(intervals[i][0]);
-            temp.push_back(intervals[i][1]);
-            ans.push_back(temp);
+            ans.push_back(intervals[i]);
+            ++j;
         }
+        ++i;
     }
     return ans;
 }
+
 int main()
 {
     vector<vector<int>> v;

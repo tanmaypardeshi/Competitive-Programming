@@ -8,3 +8,5 @@
 |               [maximum_subarray.cpp](maximum_subarray.cpp)               |               [Kadane's Algorithm/Max Subarray](https://leetcode.com/problems/maximum-subarray/)                |
 |                [merge_intervals.cpp](merge_intervals.cpp)                |                        [Merge Intervals](https://leetcode.com/problems/merge-intervals)                         |
 |          [find_duplicate_number.cpp](find_duplicate_number.cpp)          |           [Find Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/solution/)            |
+|              [set_matrix_zeroes.cpp](set_matrix_zeroes.cpp)              |                      [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                      |
+|                [pascal_triangle.cpp](pascal_triangle.cpp)                |                      [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)                       |
