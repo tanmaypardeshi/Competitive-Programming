@@ -10,3 +10,5 @@
 |          [find_duplicate_number.cpp](find_duplicate_number.cpp)          |           [Find Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/solution/)            |
 |              [set_matrix_zeroes.cpp](set_matrix_zeroes.cpp)              |                      [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                      |
 |                [pascal_triangle.cpp](pascal_triangle.cpp)                |                      [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)                       |
+|                  [rotate_matrix.cpp](rotate_matrix.cpp)                  |                         [Rotate 2D matrix](https://leetcode.com/problems/rotate-image/)                         |
+|               [search_2d_matrix.cpp](search_2d_matrix.cpp)               |                      [Search 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)                      |

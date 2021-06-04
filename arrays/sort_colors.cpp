@@ -70,4 +70,5 @@ int main()
         nums.push_back(temp);
     }
     s.sortColors(nums);
+    return 0;
 }
