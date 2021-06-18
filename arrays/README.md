@@ -14,3 +14,5 @@
 |               [search_2d_matrix.cpp](search_2d_matrix.cpp)               |                      [Search 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)                      |
 |                          [power.cpp](power.cpp)                          |                                [Pow(x,n)](https://leetcode.com/problems/powx-n/)                                |
 |            [majority_element_n2.cpp](majority_element_n2.cpp)            |                    [Majority Element(n/2)](https://leetcode.com/problems/majority-element/)                     |
+|            [majority_element_n3.cpp](majority_element_n3.cpp)            |                   [Majority Element(n/3)](https://leetcode.com/problems/majority-element-ii/)                   |
+|                   [unique_paths.cpp](unique_paths.cpp)                   |                           [Unique Paths](https://leetcode.com/problems/unique-paths/)                           |

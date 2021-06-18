@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int majorityElement(vector<int> &nums)
+vector<int> majorityElement(vector<int> &nums)
 {
     int n = nums.size();
 
@@ -12,12 +12,12 @@ int majorityElement(vector<int> &nums)
         mp[nums[i]]++;
     }
 
-    int ans;
+    vector<int> ans;
 
-    for (int i = 0; i < n; i++)
+    for (auto x : mp)
     {
-        if (mp[nums[i]] > (n / 2))
-            ans = nums[i];
+        if (x.second > (n / 3))
+            ans.push_back(x.first);
     }
     return ans;
 }
@@ -36,9 +36,13 @@ int main()
         v.push_back(temp);
     }
 
-    int ans = majorityElement(v);
+    vector<int> ans = majorityElement(v);
 
-    cout << ans << endl;
+    for (auto x : ans)
+    {
+        cout << x << " ";
+    }
+    cout << endl;
 
     return 0;
 }
