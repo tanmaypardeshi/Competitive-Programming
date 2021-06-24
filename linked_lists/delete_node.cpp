@@ -1,5 +1,9 @@
 /*
-Given the head of a singly linked list, reverse the list, and return the reversed list.
+Write a function to delete a node in a singly-linked list. 
+You will not be given access to the head of the list, instead 
+you will be given access to the node to be deleted directly.
+
+It is guaranteed that the node to be deleted is not a tail node in the list.
 */
 
 #include <bits/stdc++.h>
@@ -54,36 +58,21 @@ void printList(ListNode *head)
     cout << endl;
 }
 
-ListNode *reverseList(ListNode *head)
+void deleteNode(ListNode *node)
 {
-    if (!head)
-        return head;
-    ListNode *prev = NULL;
-    ListNode *current = head;
-    ListNode *next = head->next;
-
-    while (current)
-    {
-        next = current->next;
-        current->next = prev;
-        prev = current;
-        current = next;
-    }
-
-    return prev;
+    ListNode *temp = node->next;
+    node->val = temp->val;
+    node->next = temp->next;
+    delete temp;
 }
 
 int main()
 {
     ListNode *head = NULL;
-    ListNode *reverse = NULL;
+    ListNode *middle = NULL;
     head = createList(head);
 
     printList(head);
-
-    reverse = reverseList(head);
-
-    printList(reverse);
 
     return 0;
 }
