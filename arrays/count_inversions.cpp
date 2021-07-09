@@ -1,89 +1,73 @@
 /*
-
+Inversion Count for an array indicates – how far (or close) the array is from being sorted. 
+If the array is already sorted, then the inversion count is 0, but if the array is sorted 
+in the reverse order, the inversion count is the maximum. 
+Formally speaking, two elements a[i] and a[j] form an inversion if a[i] > a[j] and i < j 
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 
-int merge(vector<int> &nums, int left, int mid, int right)
+int merge(int arr[], int temp[], int left, int mid, int right)
 {
+    int i, j, k;
+
     int ans = 0;
 
-    int j = mid + 1;
+    i = left;
+    j = mid;
+    k = left;
 
-    for (int i = left; i <= mid; i++)
+    while ((i <= mid - 1) && (j <= right))
     {
-        while (j <= right && nums[i] > 2LL * nums[j])
+        if (arr[i] <= arr[j])
         {
-            j++;
+            temp[k++] = arr[i++];
         }
-        ans += (j - (mid + 1));
-    }
-
-    vector<int> temp;
-
-    int l = left, r = mid + 1;
-
-    while (l <= mid && r <= right)
-    {
-        if (nums[l] <= nums[r])
-            temp.push_back(nums[left++]);
         else
-            temp.push_back(nums[right++]);
+        {
+            temp[k++] = arr[j++];
+            ans = ans + (mid - i);
+        }
     }
 
-    while (l <= mid)
-    {
-        temp.push_back(nums[left++]);
-    }
+    while (i <= mid - 1)
+        temp[k++] = arr[i++];
 
-    while (r <= right)
-    {
-        temp.push_back(nums[right++]);
-    }
-
-    for (int i = left; i <= right; i++)
-    {
-        nums[i] = temp[i - left];
-    }
-
-    return ans;
+    while (j <= right)
+        temp[k++] = arr[j++];
 }
 
-int mergeSort(vector<int> &nums, int left, int right)
+int mergeSort(int arr[], int temp[], int left, int right)
 {
-    if (left >= right)
-        return 0;
-    int mid = (left + right) / 2;
+    int mid, ans = 0;
 
-    int ans = mergeSort(nums, left, mid);
-    ans += mergeSort(nums, mid + 1, right);
-    ans += merge(nums, left, mid, right);
+    if (right > left)
+    {
+        mid = (left + right) / 2;
 
-    return ans;
-}
+        ans += mergeSort(arr, temp, left, mid);
+        ans += mergeSort(arr, temp, mid + 1, right);
 
-int reversePairs(vector<int> &nums)
-{
-    int ans = mergeSort(nums, 0, nums.size() - 1);
+        ans += merge(arr, temp, left, mid + 1, right);
+    }
     return ans;
 }
 
 int main()
 {
     int n;
-    vector<int> v;
 
     cin >> n;
 
+    int *arr = new int[n];
+    int *temp = new int[n];
     for (int i = 0; i < n; i++)
     {
-        int temp;
-        cin >> temp;
-
-        v.push_back(temp);
+        cin >> arr[i];
     }
 
-    int ans = reversePairs(v);
+    int ans = mergeSort(arr, temp, 0, n - 1);
 
     cout << ans << endl;
 
