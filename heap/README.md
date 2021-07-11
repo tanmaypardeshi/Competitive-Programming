@@ -6,3 +6,7 @@
 |           [max_heap.cpp](max_heap.cpp)           | Max Heap                                     |
 |       [kth_smallest.cpp](kth_smallest.cpp)       | Return the kth smallest element of the array |
 | [k_largest_elements.cpp](k_largest_elements.cpp) | Return the k largest elements of an array    |
+|      [nearly_sorted.cpp](nearly_sorted.cpp)      | Sort a nearly sorted arrays                  |
+|    [closest_numbers.cpp](closest_numbers.cpp)    | K closest numbers to a given number          |
+|     [k_frequent_nos.cpp](k_frequent_nos.cpp)     | Find k most frequent numbers                 |
+|     [frequency_sort.cpp](frequency_sort.cpp)     | Frequency sort using heap                    |
