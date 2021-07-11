@@ -10,3 +10,4 @@
 |    [closest_numbers.cpp](closest_numbers.cpp)    | K closest numbers to a given number          |
 |     [k_frequent_nos.cpp](k_frequent_nos.cpp)     | Find k most frequent numbers                 |
 |     [frequency_sort.cpp](frequency_sort.cpp)     | Frequency sort using heap                    |
+|  [closest_to_origin.cpp](closest_to_origin.cpp)  | Find k closest points to the origin          |
