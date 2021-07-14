@@ -11,3 +11,4 @@
 |     [nearly_sorted.cpp](nearly_sorted.cpp)     | Find element in nearly sorted array                       |
 |             [floor.cpp](floor.cpp)             | Floor of element in array                                 |
 |              [ceil.cpp](ceil.cpp)              | Ceil of element in array                                  |
+|     [next_alphabet.cpp](next_alphabet.cpp)     | Next alphabet in a string                                 |
