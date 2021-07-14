@@ -12,3 +12,4 @@
 |             [floor.cpp](floor.cpp)             | Floor of element in array                                 |
 |              [ceil.cpp](ceil.cpp)              | Ceil of element in array                                  |
 |     [next_alphabet.cpp](next_alphabet.cpp)     | Next alphabet in a string                                 |
+|    [min_difference.cpp](min_difference.cpp)    | Find minimum difference between key and element in array  |
