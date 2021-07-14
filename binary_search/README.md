@@ -8,3 +8,4 @@
 | [count_of_elements.cpp](count_of_elements.cpp) | Find total count of an element                            |
 |      [no_rotations.cpp](no_rotations.cpp)      | Count the number of times a sorted array has been rotated |
 |   [element_rotated.cpp](element_rotated.cpp)   | Find element in rotated array                             |
+|     [nearly_sorted.cpp](nearly_sorted.cpp)     | Find element in nearly sorted array                       |
