@@ -55,7 +55,7 @@ int main()
 
     if (answer != -1)
     {
-        cout << key << " is the floor of " << answer << endl;
+        cout << answer << " is the floor of " << key << endl;
     }
     else
     {
