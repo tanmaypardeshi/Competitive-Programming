@@ -13,3 +13,5 @@
 |              [ceil.cpp](ceil.cpp)              | Ceil of element in array                                  |
 |     [next_alphabet.cpp](next_alphabet.cpp)     | Next alphabet in a string                                 |
 |    [min_difference.cpp](min_difference.cpp)    | Find minimum difference between key and element in array  |
+|      [peak_element.cpp](peak_element.cpp)      | Find peak element of array                                |
+|       [max_bitonic.cpp](max_bitonic.cpp)       | Find maximum element in a bitonic array                   |
