@@ -28,7 +28,6 @@ int first_occurence(vector<int> v, int left, int right, int key)
 
 int last_occurence(vector<int> v, int left, int right, int key)
 {
-    int count = 0;
     int res = -1;
     while (left <= right)
     {

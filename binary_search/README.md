@@ -15,3 +15,4 @@
 |    [min_difference.cpp](min_difference.cpp)    | Find minimum difference between key and element in array  |
 |      [peak_element.cpp](peak_element.cpp)      | Find peak element of array                                |
 |       [max_bitonic.cpp](max_bitonic.cpp)       | Find maximum element in a bitonic array                   |
+|    [search_bitonic.cpp](search_bitonic.cpp)    | Search in bitonic array                                   |
