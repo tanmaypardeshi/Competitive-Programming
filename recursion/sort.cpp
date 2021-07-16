@@ -12,16 +12,18 @@ int main()
     cout << "Enter n:- ";
     cin >> n;
 
-    cout << "Enter elements in the array:- ";
+    cout << "Enter elements in the array:- " << endl;
 
     for (int i = 0; i < n; i++)
     {
+        cout << "Enter element " << i << ":- ";
         cin >> temp;
         v.push_back(temp);
     }
 
     sort(v);
 
+    cout << "Sorted vector is:- " << endl;
     for (auto x : v)
     {
         cout << x << endl;
