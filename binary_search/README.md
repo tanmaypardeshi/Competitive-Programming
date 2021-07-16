@@ -17,3 +17,4 @@
 |       [max_bitonic.cpp](max_bitonic.cpp)       | Find maximum element in a bitonic array                   |
 |    [search_bitonic.cpp](search_bitonic.cpp)    | Search in bitonic array                                   |
 |    [sorted_row_col.cpp](sorted_row_col.cpp)    | Find element in sorted matrix                             |
+|    [allocate_pages.cpp](allocate_pages.cpp)    | Allocate minimum number of pages                          |
