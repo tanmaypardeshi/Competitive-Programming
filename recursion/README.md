@@ -1,12 +1,13 @@
 # Recursion
 
-|               Program Name               | Description                    |
-| :--------------------------------------: | :----------------------------- |
-|           [1ton.cpp](1ton.cpp)           | Print from 1 to n              |
-|           [nto1.cpp](nto1.cpp)           | Print from n to 1              |
-|           [sort.cpp](sort.cpp)           | Sort an array                  |
-|     [sort_stack.cpp](sort_stack.cpp)     | Sort a stack                   |
-|         [middle.cpp](middle.cpp)         | Delete middle element of stack |
-|        [reverse.cpp](reverse.cpp)        | Reverse stack                  |
-|     [kth_symbol.cpp](kth_symbol.cpp)     | Find kth symbol in grammar     |
-| [tower_of_hanoi.cpp](tower_of_hanoi.cpp) | Tower of hanoi                 |
+|               Program Name               | Description                     |
+| :--------------------------------------: | :------------------------------ |
+|           [1ton.cpp](1ton.cpp)           | Print from 1 to n               |
+|           [nto1.cpp](nto1.cpp)           | Print from n to 1               |
+|           [sort.cpp](sort.cpp)           | Sort an array                   |
+|     [sort_stack.cpp](sort_stack.cpp)     | Sort a stack                    |
+|         [middle.cpp](middle.cpp)         | Delete middle element of stack  |
+|        [reverse.cpp](reverse.cpp)        | Reverse stack                   |
+|     [kth_symbol.cpp](kth_symbol.cpp)     | Find kth symbol in grammar      |
+| [tower_of_hanoi.cpp](tower_of_hanoi.cpp) | Tower of hanoi                  |
+|  [print_subsets.cpp](print_subsets.cpp)  | Print subsets of a given string |
