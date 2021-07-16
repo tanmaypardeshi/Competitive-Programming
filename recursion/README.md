@@ -11,3 +11,4 @@
 |     [kth_symbol.cpp](kth_symbol.cpp)     | Find kth symbol in grammar      |
 | [tower_of_hanoi.cpp](tower_of_hanoi.cpp) | Tower of hanoi                  |
 |  [print_subsets.cpp](print_subsets.cpp)  | Print subsets of a given string |
+| [unique_subsets.cpp](unique_subsets.cpp) | Print unique subsets            |
