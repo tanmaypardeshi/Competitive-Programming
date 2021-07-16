@@ -8,3 +8,4 @@
 | [sort_stack.cpp](sort_stack.cpp) | Sort a stack                   |
 |     [middle.cpp](middle.cpp)     | Delete middle element of stack |
 |    [reverse.cpp](reverse.cpp)    | Reverse stack                  |
+| [kth_symbol.cpp](kth_symbol.cpp) | Find kth symbol in grammar     |
