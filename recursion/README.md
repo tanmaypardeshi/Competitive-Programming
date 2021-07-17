@@ -13,3 +13,4 @@
 |            [print_subsets.cpp](print_subsets.cpp)            | Print subsets of a given string |
 |           [unique_subsets.cpp](unique_subsets.cpp)           | Print unique subsets            |
 | [permutations_with_spaces.cpp](permutations_with_spaces.cpp) | Print permutations with spaces  |
+|              [case_change.cpp](case_change.cpp)              | Case change permuation          |
