@@ -17,3 +17,4 @@
 |              [letter_case.cpp](letter_case.cpp)              | Letter case permutation         |
 |     [generate_parentheses.cpp](generate_parentheses.cpp)     | Generate balanced parentheses   |
 |         [n_bit_binary_nos.cpp](n_bit_binary_nos.cpp)         | Generate n bit binary string    |
+|                 [josephus.cpp](josephus.cpp)                 | Josephus problem                |
