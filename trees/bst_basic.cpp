@@ -371,7 +371,7 @@ int main()
         case 20:
             return 0;
         default:
-            cout << "\nrror in choice, try again" << endl;
+            cout << "\nError in choice, try again" << endl;
         }
     }
     return 0;
