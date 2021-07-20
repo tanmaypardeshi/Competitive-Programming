@@ -3,7 +3,7 @@ using namespace std;
 
 typedef struct Node
 {
-    int data;
+    int data, flag;
     Node *left, *right;
 } Node;
 
@@ -25,6 +25,10 @@ public:
     int displaydepthbst(Node *, int);
     void insertnode(Node *, int);
     Node *deletenode(Node *, int);
+    void preorder_nr();
+    void inorder_nr();
+    void postorder_nr();
+    void bfs();
 };
 
 BST::BST()
@@ -45,6 +49,7 @@ void BST::create()
         cout << "Enter data:- ";
         cin >> data;
         newnode->data = data;
+        newnode->flag = 0;
         newnode->left = NULL;
         newnode->right = NULL;
 
@@ -215,6 +220,7 @@ void BST::insertnode(Node *root, int x)
     Node *newnode, *temp;
     newnode = new Node;
     newnode->data = x;
+    newnode->flag = 0;
     newnode->left = NULL;
     newnode->right = NULL;
 
@@ -300,6 +306,120 @@ Node *BST::deletenode(Node *t, int x)
     return NULL;
 }
 
+void BST::preorder_nr()
+{
+    stack<Node *> s;
+    Node *temp = root;
+
+    while (1)
+    {
+        while (temp != NULL)
+        {
+            cout << temp->data << " ";
+            if (temp->right != NULL)
+            {
+                s.push(temp->right);
+            }
+            temp = temp->left;
+        }
+        if (!s.empty())
+        {
+            temp = s.top();
+            s.pop();
+        }
+        else
+        {
+            break;
+        }
+    }
+}
+
+void BST::inorder_nr()
+{
+    stack<Node *> s;
+    Node *temp = root;
+
+    while (1)
+    {
+        while (temp != NULL)
+        {
+            s.push(temp);
+            temp = temp->left;
+        }
+        if (!s.empty())
+        {
+            temp = s.top();
+            s.pop();
+            cout << temp->data << " ";
+            temp = temp->right;
+        }
+        else
+        {
+            break;
+        }
+    }
+}
+
+void BST::postorder_nr()
+{
+    stack<Node *> s;
+    Node *temp = root;
+
+    while (1)
+    {
+        while (temp != NULL)
+        {
+            s.push(temp);
+            temp = temp->left;
+        }
+
+        while (!s.empty())
+        {
+            temp = s.top();
+            s.pop();
+            if (temp->flag == 1)
+            {
+                cout << temp->data << " ";
+            }
+            else
+            {
+                temp->flag = 1;
+                s.push(temp);
+                temp = temp->right;
+                break;
+            }
+        }
+        if (s.empty())
+        {
+            break;
+        }
+    }
+}
+
+void BST::bfs()
+{
+    queue<Node *> q;
+
+    Node *temp = root;
+
+    q.push(temp);
+
+    while (!q.empty())
+    {
+        temp = q.front();
+        q.pop();
+        cout << temp->data << " ";
+        if (temp->left != NULL)
+        {
+            q.push(temp->left);
+        }
+        if (temp->right != NULL)
+        {
+            q.push(temp->right);
+        }
+    }
+}
+
 int main()
 {
     BST tree;
@@ -318,7 +438,12 @@ int main()
         cout << "\n7. Count total number of non leaf nodes.";
         cout << "\n8. Display level of a particular node.";
         cout << "\n9. Display depth of BST.";
-        cout << "\n10. Delete node in BST.";
+        cout << "\n10. Insert a node in BST.";
+        cout << "\n11. Delete node in BST.";
+        cout << "\n12. Preorder Non Recursive.";
+        cout << "\n13. Inorder Non Recursive.";
+        cout << "\n14. Postorder Non Recursive.";
+        cout << "\n15. BFS Traversal";
         cout << "\n20. Exit.";
         cout << "\nEnter your choice: ";
         cin >> choice;
@@ -329,17 +454,17 @@ int main()
             tree.create();
             break;
         case 2:
-            cout << "Preorder Recursive:- ";
+            cout << "\nPreorder Recursive:- ";
             tree.preorder(tree.getroot());
             cout << endl;
             break;
         case 3:
-            cout << "Inorder Recursive:- ";
+            cout << "\nInorder Recursive:- ";
             tree.inorder(tree.getroot());
             cout << endl;
             break;
         case 4:
-            cout << "Postorder Recursive:- ";
+            cout << "\nPostorder Recursive:- ";
             tree.postorder(tree.getroot());
             cout << endl;
             break;
@@ -361,11 +486,39 @@ int main()
             cout << "\nDepth of BST is:- " << tree.displaydepthbst(tree.getroot(), -1) << endl;
             break;
         case 10:
+            cout << "\nEnter value of node which needs to be inserted:- ";
+            cin >> x;
+            tree.insertnode(tree.getroot(), x);
+            cout << "\nTree is:- ";
+            tree.inorder(tree.getroot());
+            cout << endl;
+            break;
+        case 11:
             cout << "\nEnter value of node which needs to be deleted:- ";
             cin >> x;
             tree.deletenode(tree.getroot(), x);
-            cout << "Tree is:- ";
+            cout << "\nTree is:- ";
             tree.inorder(tree.getroot());
+            cout << endl;
+            break;
+        case 12:
+            cout << "\nPreorder Non Recursive:- ";
+            tree.preorder_nr();
+            cout << endl;
+            break;
+        case 13:
+            cout << "\nInorder Non Recursive:- ";
+            tree.inorder_nr();
+            cout << endl;
+            break;
+        case 14:
+            cout << "\nPostorder Non Recursive:- ";
+            tree.postorder_nr();
+            cout << endl;
+            break;
+        case 15:
+            cout << "\nBFS Traversal:- ";
+            tree.bfs();
             cout << endl;
             break;
         case 20:
