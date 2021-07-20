@@ -521,7 +521,7 @@ int main()
             tree.bfs();
             cout << endl;
             break;
-        case 16:
+        case 16f:
             return 0;
         default:
             cout << "\nError in choice, try again" << endl;
