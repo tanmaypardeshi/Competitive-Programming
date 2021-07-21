@@ -8,3 +8,4 @@
 |           [dp](/dp)            | Dynamic Programming problems |
 |          [heap](heap)          | Heap Problems                |
 | [binary_search](binary_search) | Binary Search Problems       |
+|  [diameter.cpp](diameter.cpp)  | Diameter of tree             |
