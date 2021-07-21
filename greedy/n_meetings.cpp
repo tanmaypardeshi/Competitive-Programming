@@ -17,7 +17,7 @@ bool compare(Meeting m1, Meeting m2)
     return false;
 }
 
-void maxMeetings(int start[], int end[], int n)
+void n_meetings(int start[], int end[], int n)
 {
     Meeting *m = new Meeting[n];
 
@@ -75,5 +75,5 @@ int main()
         cin >> end[i];
     }
 
-    maxMeetings(start, end, n);
+    n_meetings(start, end, n);
 }
