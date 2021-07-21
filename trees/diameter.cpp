@@ -285,7 +285,8 @@ int main()
             break;
         case 7:
             x = INT_MIN;
-            cout << "\nDiameter of tree is:- " << tree.get_diameter(tree.getroot(), x) << endl;
+            tree.get_diameter(tree.getroot(), x);
+            cout << "\nDiameter of tree is:- " << x << endl;
             break;
         case 8:
             return 0;
