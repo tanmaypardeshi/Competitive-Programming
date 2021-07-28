@@ -19,3 +19,4 @@
 |            [majority_element_n2.cpp](majority_element_n2.cpp)            |                    [Majority Element(n/2)](https://leetcode.com/problems/majority-element/)                     |
 |            [majority_element_n3.cpp](majority_element_n3.cpp)            |                   [Majority Element(n/3)](https://leetcode.com/problems/majority-element-ii/)                   |
 |                   [unique_paths.cpp](unique_paths.cpp)                   |                           [Unique Paths](https://leetcode.com/problems/unique-paths/)                           |
+|                  [reverse_pairs.cpp](reverse_pairs.cpp)                  |                          [Reverse Pairs](https://leetcode.com/problems/reverse-pairs/)                          |
