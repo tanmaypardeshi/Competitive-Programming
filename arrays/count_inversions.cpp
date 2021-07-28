@@ -36,6 +36,13 @@ int merge(int arr[], int temp[], int left, int mid, int right)
 
     while (j <= right)
         temp[k++] = arr[j++];
+
+    for (i = left; i <= right; i++)
+    {
+        arr[i] = temp[i];
+    }
+
+    return ans;
 }
 
 int mergeSort(int arr[], int temp[], int left, int right)

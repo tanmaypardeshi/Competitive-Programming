@@ -5,7 +5,7 @@ Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
 #include <bits/stdc++.h>
 using namespace std;
 
-double power(double x, int n)
+double power_itr(double x, int n)
 {
     bool neg = (n < 0);
     n = abs(n);
@@ -22,6 +22,17 @@ double power(double x, int n)
     return res;
 }
 
+double power_rec(double x, int n)
+{
+    if (n == 0)
+        return 1;
+    int temp = power_rec(x, n / 2);
+    int result = temp * temp;
+    if (n % 2 == 1)
+        result *= x;
+    return result;
+}
+
 int main()
 {
     double x;
@@ -29,9 +40,12 @@ int main()
 
     cin >> x >> n;
 
-    double ans = power(x, n);
+    double ans1 = power_itr(x, n);
 
-    cout << ans << endl;
+    double ans2 = power_rec(x, n);
+
+    cout << ans1 << endl;
+    cout << ans2 << endl;
 
     return 0;
 }
