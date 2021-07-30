@@ -26,6 +26,18 @@ void subset_sum(vector<int> ip, vector<int> op)
     subset_sum(ip, op2);
 }
 
+void subset_sum_optimised(int index, int sum, vector<int> &arr, int N, vector<int> &final)
+{
+    if (index == N)
+    {
+        final.push_back(sum);
+        return;
+    }
+
+    subset_sum_optimised(index + 1, sum + arr[index], arr, N, final);
+    subset_sum_optimised(index + 1, sum, arr, N, final);
+}
+
 int main()
 {
     vector<int> ip, op;
@@ -49,6 +61,19 @@ int main()
         cout << x << " ";
     }
 
+    cout << endl;
+
+    int sum = 0;
+    int index = 0;
+    vector<int> final;
+
+    subset_sum_optimised(index, sum, ip, n, final);
+
+    sort(final.begin(), final.end());
+    for (auto x : final)
+    {
+        cout << x << " ";
+    }
     cout << endl;
 
     return 0;
