@@ -1,6 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+bool isPalindrome(string s, int l, int r)
+{
+    while (l <= r)
+    {
+        if (s[l++] != s[r--])
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
 void solve(int index, string s, vector<string> &path, vector<vector<string>> &res)
 {
     if (index == s.size())
@@ -18,18 +30,6 @@ void solve(int index, string s, vector<string> &path, vector<vector<string>> &re
             path.pop_back();
         }
     }
-}
-
-bool isPalindrome(string s, int l, int r)
-{
-    while (l <= r)
-    {
-        if (s[l++] != s[r--])
-        {
-            return false;
-        }
-    }
-    return true;
 }
 
 int main()
